@@ -3,8 +3,6 @@
  * @module AuthenticateUserControllerTests
  */
 
-import { it, describe, expect, beforeEach, afterEach, vi } from 'vitest'
-
 import { IAuthenticateUserUserUseCase } from '../../../../../src/app/useCases/Authenticate/AuthenticateUser'
 import { IAuthenticateUserDTO } from '../../../../../src/domain/dtos/Authenticate/AuthenticateUser'
 import { AuthenticateUserErrorType } from '../../../../../src/domain/enums/Authenticate/AuthenticateUser/ErrorType'
@@ -13,6 +11,7 @@ import { IController } from '../../../../../src/presentation/http/controllers/IC
 import { IHttpRequest } from '../../../../../src/presentation/http/helpers/IHttpRequest'
 import { HttpErrors } from '../../../../../src/presentation/http/helpers/implementations/HttpErrors'
 import { HttpSuccess } from '../../../../../src/presentation/http/helpers/implementations/HttpSuccess'
+import { it, describe, expect, beforeEach, afterEach, vi } from 'vitest'
 
 /**
  * Test suite for AuthenticateUserController.

@@ -3,12 +3,12 @@
  * @module RefreshTokenUserUseCaseTests
  */
 
+import { IGenerateRefreshTokenProvider } from '../../../../../src/app/providers/GenerateRefreshToken'
+import { ITokenManagerProvider } from '../../../../../src/app/providers/TokenManager'
+import { IRefreshTokenRepository } from '../../../../../src/app/repositories/RefreshToken'
+import { RefreshTokenUserUseCase } from '../../../../../src/app/useCases/Authenticate/implementations/RefreshTokenUser'
 import { it, describe, expect, beforeEach, afterEach, vi } from 'vitest'
 
-import { IGenerateRefreshTokenProvider } from '../../../../src/app/providers/GenerateRefreshToken'
-import { ITokenManagerProvider } from '../../../../src/app/providers/TokenManager'
-import { IRefreshTokenRepository } from '../../../../src/app/repositories/RefreshToken'
-import { RefreshTokenUserUseCase } from '../../../../src/app/useCases/Authenticate/implementations/RefreshTokenUser'
 
 /**
  * Test suite for the RefreshTokenUserUseCase class.

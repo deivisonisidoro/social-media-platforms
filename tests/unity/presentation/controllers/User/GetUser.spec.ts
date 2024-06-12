@@ -3,8 +3,6 @@
  * @module GetUserControllerTests
  */
 
-import { it, describe, expect, beforeEach, afterEach, vi } from 'vitest'
-
 import { IGetAllUserUseCase } from '../../../../../src/app/useCases/User/GetAllUser'
 import { PaginationDTO } from '../../../../../src/domain/dtos/Pagination'
 import { IUserOutRequestDTO } from '../../../../../src/domain/dtos/User/UserOut'
@@ -14,6 +12,8 @@ import { GetUserController } from '../../../../../src/presentation/http/controll
 import { IHttpRequest } from '../../../../../src/presentation/http/helpers/IHttpRequest'
 import { HttpErrors } from '../../../../../src/presentation/http/helpers/implementations/HttpErrors'
 import { HttpSuccess } from '../../../../../src/presentation/http/helpers/implementations/HttpSuccess'
+import { it, describe, expect, beforeEach, afterEach, vi } from 'vitest'
+
 
 /**
  * Test suite for GetUserController.
