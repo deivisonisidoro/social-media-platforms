@@ -3,12 +3,11 @@
  * @module RefreshTokenEntityTests
  */
 
+import { it, describe, expect } from 'vitest'
+
 import { RefreshTokenEntity } from '../../../../src/domain/entities/RefreshToken'
 import { UserEntity } from '../../../../src/domain/entities/User'
 import { Email } from '../../../../src/domain/valueObjects/Email'
-import { it, describe, expect } from 'vitest'
-
-
 
 /**
  * Test suite for the RefreshTokenEntity entity.

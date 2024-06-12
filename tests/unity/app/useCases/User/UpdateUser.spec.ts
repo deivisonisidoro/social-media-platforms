@@ -3,15 +3,15 @@
  * @module UpdateUserUseCaseTests
  */
 
+import { it, describe, expect, beforeEach, afterEach, vi } from 'vitest'
+
 import { IPasswordHasher } from '../../../../../src/app/providers/PasswordHasher'
 import { IUsersRepository } from '../../../../../src/app/repositories/User'
-import { IUpdateUserUseCase } from '../../../../../src/app/useCases/User/UpdateUser'
 import { UpdateUserUseCase } from '../../../../../src/app/useCases/User/implementations/UpdateUser'
+import { IUpdateUserUseCase } from '../../../../../src/app/useCases/User/UpdateUser'
 import { IUpdateUserRequestDTO } from '../../../../../src/domain/dtos/User/UpdateUser'
 import { EmailErrorType } from '../../../../../src/domain/enums/email/ErrorType'
 import { UserErrorType } from '../../../../../src/domain/enums/user/ErrorType'
-import { it, describe, expect, beforeEach, afterEach, vi } from 'vitest'
-
 
 /**
  * Test suite for the UpdateUserUseCase class.

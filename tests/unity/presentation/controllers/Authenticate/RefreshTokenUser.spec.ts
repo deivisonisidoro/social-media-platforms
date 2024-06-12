@@ -3,15 +3,14 @@
  * @module RefreshTokenUserControllerTests
  */
 
+import { it, describe, expect, beforeEach, afterEach, vi } from 'vitest'
+
 import { IRefreshTokenUserUseCase } from '../../../../../src/app/useCases/Authenticate/RefreshTokenUser'
 import { RefreshTokenUserController } from '../../../../../src/presentation/http/controllers/Authenticate/RefreshTokenUser'
 import { IController } from '../../../../../src/presentation/http/controllers/IController'
 import { IHttpRequest } from '../../../../../src/presentation/http/helpers/IHttpRequest'
 import { HttpErrors } from '../../../../../src/presentation/http/helpers/implementations/HttpErrors'
 import { HttpSuccess } from '../../../../../src/presentation/http/helpers/implementations/HttpSuccess'
-import { it, describe, expect, beforeEach, afterEach, vi } from 'vitest'
-
-
 
 /**
  * Test suite for RefreshTokenUserController.

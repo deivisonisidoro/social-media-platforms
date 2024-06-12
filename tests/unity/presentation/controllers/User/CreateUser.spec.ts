@@ -3,6 +3,8 @@
  * @module CreateUserControllerTests
  */
 
+import { it, describe, expect, beforeEach, afterEach, vi } from 'vitest'
+
 import { ICreateUserUseCase } from '../../../../../src/app/useCases/User/CreateUser'
 import { ICreateUserRequestDTO } from '../../../../../src/domain/dtos/User/CreateUser'
 import { UserErrorType } from '../../../../../src/domain/enums/user/ErrorType'
@@ -11,7 +13,6 @@ import { CreateUserController } from '../../../../../src/presentation/http/contr
 import { IHttpRequest } from '../../../../../src/presentation/http/helpers/IHttpRequest'
 import { HttpErrors } from '../../../../../src/presentation/http/helpers/implementations/HttpErrors'
 import { HttpSuccess } from '../../../../../src/presentation/http/helpers/implementations/HttpSuccess'
-import { it, describe, expect, beforeEach, afterEach, vi } from 'vitest'
 
 /**
  * Test suite for CreateUserController.

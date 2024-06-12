@@ -3,9 +3,9 @@
  * @module EmailClassTests
  */
 
-import { Email } from '../../../../src/domain/valueObjects/Email'
 import { describe, expect, it } from 'vitest'
 
+import { Email } from '../../../../src/domain/valueObjects/Email'
 
 /**
  * Test suite for the Email class.

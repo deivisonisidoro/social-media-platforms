@@ -3,6 +3,8 @@
  * @module CreateUserUseCaseTests
  */
 
+import { it, describe, expect, beforeEach, afterEach, vi } from 'vitest'
+
 import { IPasswordHasher } from '../../../../../src/app/providers/PasswordHasher'
 import { IUsersRepository } from '../../../../../src/app/repositories/User'
 import { ICreateUserUseCase } from '../../../../../src/app/useCases/User/CreateUser'
@@ -10,8 +12,6 @@ import { CreateUserUseCase } from '../../../../../src/app/useCases/User/implemen
 import { ICreateUserRequestDTO } from '../../../../../src/domain/dtos/User/CreateUser'
 import { EmailErrorType } from '../../../../../src/domain/enums/email/ErrorType'
 import { UserErrorType } from '../../../../../src/domain/enums/user/ErrorType'
-import { it, describe, expect, beforeEach, afterEach, vi } from 'vitest'
-
 
 /**
  * Test suite for the CreateUserUseCase class.

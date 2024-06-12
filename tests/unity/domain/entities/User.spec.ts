@@ -3,10 +3,10 @@
  * @module UserClassTests
  */
 
-import { UserEntity } from '../../../../src/domain/entities/User'
-import { Email } from '../../../../src/domain/valueObjects/Email'
 import { it, describe, expect } from 'vitest'
 
+import { UserEntity } from '../../../../src/domain/entities/User'
+import { Email } from '../../../../src/domain/valueObjects/Email'
 
 /**
  * Test suite for the User class.

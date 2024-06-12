@@ -3,6 +3,8 @@
  * @module DeleteUserControllerTests
  */
 
+import { it, describe, expect, beforeEach, afterEach, vi } from 'vitest'
+
 import { IDeleteUserUseCase } from '../../../../../src/app/useCases/User/DeleteUser'
 import { UserErrorType } from '../../../../../src/domain/enums/user/ErrorType'
 import { UserSuccessType } from '../../../../../src/domain/enums/user/SuccessType'
@@ -11,8 +13,6 @@ import { DeleteUserController } from '../../../../../src/presentation/http/contr
 import { IHttpRequest } from '../../../../../src/presentation/http/helpers/IHttpRequest'
 import { HttpErrors } from '../../../../../src/presentation/http/helpers/implementations/HttpErrors'
 import { HttpSuccess } from '../../../../../src/presentation/http/helpers/implementations/HttpSuccess'
-import { it, describe, expect, beforeEach, afterEach, vi } from 'vitest'
-
 
 /**
  * Test suite for DeleteUserController.
